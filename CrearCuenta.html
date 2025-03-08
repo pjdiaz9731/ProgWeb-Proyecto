@@ -7,8 +7,9 @@
     <link rel="stylesheet" href="Styles/CrearCuenta.css">
 </head>
 <body>
+
 <div class="signup-container">
-    <form class="signup-form" action="/signup" method="POST">
+    <form id="signup-form">
         <h2>Crear Cuenta</h2>
 
         <div class="input-group">
@@ -38,5 +39,31 @@
         </div>
     </form>
 </div>
+
+<script>
+    document.getElementById("signup-form").addEventListener("submit", async (e) => {
+        e.preventDefault();
+
+        const username = document.getElementById("username").value;
+        const email = document.getElementById("email").value;
+        const password = document.getElementById("password").value;
+        const confirmPassword = document.getElementById("confirm-password").value;
+
+        if (password !== confirmPassword) {
+            alert("❌ Las contraseñas no coinciden");
+            return;
+        }
+
+        const response = await fetch("http://localhost:3000/signup", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ username, email, password })
+        });
+
+        const data = await response.json();
+        alert(data.message);
+    });
+</script>
+
 </body>
 </html>

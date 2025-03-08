@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DdlMappings">
+    <mapping uuid="176fb64c-01ab-46e0-ac80-119e936a9ce6" name="ProgWebDB Mapping">
+      <data-sources db="1f7de764-9370-4a9d-aae3-41cd18bb540a" ddl="091426b6-002c-4bc5-93a6-3a757e9318fb" />
+    </mapping>
+  </component>
+</project>
