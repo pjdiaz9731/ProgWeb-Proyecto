@@ -5,8 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f7b69f1d-d0a1-4882-9053-f5215b7ceed0" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Loging.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Styles/Loging.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CrearCuenta.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Styles/CrearCuenta.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,7 +68,7 @@
       <option name="presentableId" value="Default" />
       <updated>1741401707082</updated>
       <workItem from="1741401708830" duration="67000" />
-      <workItem from="1741402027425" duration="730000" />
+      <workItem from="1741402027425" duration="1039000" />
     </task>
     <servers />
   </component>
