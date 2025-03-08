@@ -161,6 +161,12 @@ footer {
     padding: 20px 0;
     text-align: center;
     margin-top: 40px;
+    
+}
+
+svg {
+    color: white;
+    margin: 10px;
 }
 
 /* Button Secondary (Green) */
