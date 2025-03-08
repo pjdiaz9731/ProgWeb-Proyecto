@@ -1,81 +1,111 @@
-/* Estilos generales */
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f9;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
+/* Estilo para el video de fondo */
+.video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Pone el video detrás del contenido */
+    overflow: hidden;
 }
 
+.video-background video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Hace que el video cubra toda la pantalla */
+}
+
+/* Contenedor principal del login */
 .login-container {
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    background-color: rgba(255, 255, 255, 0.8); /* Fondo semitransparente */
     width: 100%;
     max-width: 400px;
-    padding: 20px;
+    margin: 0 auto;
+    z-index: 1; /* Asegura que el formulario esté por encima del video */
 }
 
-.login-form h2 {
-    text-align: center;
+/* Título del formulario */
+h2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
     margin-bottom: 20px;
-    color: #333;
-}
-
-.input-group {
-    margin-bottom: 15px;
-}
-
-.input-group label {
-    display: block;
-    font-size: 14px;
-    color: #333;
-    margin-bottom: 5px;
-}
-
-.input-group input {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    font-size: 16px;
-    box-sizing: border-box;
-}
-
-.input-group input:focus {
-    border-color: #4CAF50;
-}
-
-.login-btn {
-    width: 100%;
-    padding: 10px;
-    background-color: #4CAF50;
-    color: #fff;
-    border: none;
-    border-radius: 4px;
-    font-size: 16px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.login-btn:hover {
-    background-color: #45a049;
-}
-
-.extra-options {
     text-align: center;
-    margin-top: 15px;
 }
 
-.extra-options a {
-    color: #4CAF50;
+/* Estilo de los campos de entrada */
+.form-control {
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 15px;
     font-size: 14px;
-    text-decoration: none;
-    margin: 0 5px;
+    width: 100%; /* Asegura que los campos ocupen todo el ancho */
 }
 
-.extra-options a:hover {
-    text-decoration: underline;
+/* Botón de inicio de sesión */
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+    border-radius: 8px;
+    padding: 10px;
+    font-size: 16px;
+    width: 100%; /* Asegura que el botón ocupe todo el ancho */
+}
+
+/* Enlaces */
+a {
+    color: #007bff;
+}
+
+/* Estilo para los botones de Google y Apple */
+.social-login .btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    padding: 12px;
+    border-radius: 8px;
+    font-weight: 600;
+    text-align: center;
+    gap: 10px; /* Espacio entre icono y texto */
+}
+
+/* Botón de Google */
+.google-btn {
+    background-color: #4285f4;
+    color: white;
+    border: none;
+}
+
+.google-btn .social-icon {
+    width: 30px;
+    height: 30px;
+}
+
+/* Botón de Apple */
+.apple-btn {
+    background-color: #000;
+    color: white;
+    border: none;
+}
+
+.apple-btn .social-icon {
+    width: 30px;
+    height: 30px;
+}
+
+/* Ajuste para los botones de Google y Apple en móvil */
+@media (max-width: 576px) {
+    .social-login .btn {
+        font-size: 12px;
+        padding: 8px;
+    }
+
+    .social-icon {
+        width: 18px;
+        height: 18px;
+    }
 }

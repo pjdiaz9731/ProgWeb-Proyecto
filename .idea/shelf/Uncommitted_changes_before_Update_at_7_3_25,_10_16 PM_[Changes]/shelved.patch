@@ -1,0 +1,136 @@
+Index: Images/account.svg
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Images/account.svg b/Images/account.svg
+new file mode 100644
+--- /dev/null	(date 1741407399929)
++++ b/Images/account.svg	(date 1741407399929)
+@@ -0,0 +1,3 @@
++<svg width="46" height="46" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
++  <path d="M24 11.988C24 5.37 18.624 0 12 0S0 5.37 0 11.988c0 3.645 1.656 6.93 4.248 9.135.024.024.048.024.048.048.216.168.432.336.672.504.12.072.216.166.336.262A11.97 11.97 0 0 0 12.024 24a11.97 11.97 0 0 0 6.72-2.063c.12-.072.216-.166.336-.24.216-.166.456-.334.672-.502.024-.024.048-.024.048-.048 2.544-2.23 4.2-5.514 4.2-9.159ZM12 22.49c-2.256 0-4.32-.72-6.024-1.919.024-.192.072-.383.12-.575.143-.52.353-1.02.624-1.486.264-.456.576-.864.96-1.224a6.74 6.74 0 0 1 1.224-.959 6.057 6.057 0 0 1 1.464-.6A6.224 6.224 0 0 1 12 15.513a6.278 6.278 0 0 1 4.392 1.749 6.01 6.01 0 0 1 1.296 1.942c.168.433.288.889.36 1.367A10.545 10.545 0 0 1 12 22.489Zm-3.672-11.1a3.735 3.735 0 0 1-.312-1.537c0-.526.096-1.054.312-1.534s.504-.91.864-1.27.792-.647 1.272-.863A3.743 3.743 0 0 1 12 5.874c.552 0 1.056.096 1.536.312s.912.504 1.272.862c.36.36.648.792.864 1.271a3.74 3.74 0 0 1 .312 1.534c0 .553-.096 1.056-.312 1.535a4.26 4.26 0 0 1-.864 1.272 4.26 4.26 0 0 1-1.272.863 4.072 4.072 0 0 1-3.096 0 4.26 4.26 0 0 1-1.272-.863 3.79 3.79 0 0 1-.84-1.272v.002Zm11.136 7.959c0-.049-.024-.073-.024-.12a7.83 7.83 0 0 0-1.032-2.11 7.325 7.325 0 0 0-1.632-1.702 7.813 7.813 0 0 0-1.56-.912c.252-.166.485-.359.696-.575a6.31 6.31 0 0 0 .936-1.175 5.437 5.437 0 0 0 .792-2.902 5.566 5.566 0 0 0-.432-2.204 5.698 5.698 0 0 0-1.224-1.799 5.767 5.767 0 0 0-1.8-1.2 5.58 5.58 0 0 0-2.208-.43 5.58 5.58 0 0 0-2.208.432 5.446 5.446 0 0 0-1.8 1.222 5.76 5.76 0 0 0-1.2 1.799 5.565 5.565 0 0 0-.432 2.204c0 .528.072 1.032.216 1.511.144.504.336.96.6 1.39.24.432.576.816.936 1.176.216.216.456.407.72.575a7.68 7.68 0 0 0-1.56.936 8.314 8.314 0 0 0-1.632 1.678 7.498 7.498 0 0 0-1.032 2.11c-.024.047-.024.096-.024.12-1.896-1.919-3.072-4.508-3.072-7.385C1.488 6.21 6.216 1.486 12 1.486c5.784 0 10.512 4.724 10.512 10.502a10.44 10.44 0 0 1-3.048 7.36Z"></path>
++</svg>
+\ No newline at end of file
+Index: MenuPrincipal.html
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><!DOCTYPE html>\n<html lang=\"es\">\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>TicoFLY</title>\n    <link rel=\"stylesheet\" href=\"Styles/MenuPrincipal.css\">\n</head>\n<body>\n<!-- Cabecera del sitio con el menú de navegación -->\n<header>\n    <nav>\n        <h1>TicoFly</h1>\n        <ul id=\"nav-list\">\n            <li><a href=\"#\" id=\"discover-btn\">Descubre</a></li>\n            <li><a href=\"#\" id=\"trips-btn\">Viajes</a></li>\n            <li><a href=\"#\" id=\"reserve-btn\">Reservas</a></li>\n            <li><a href=\"#\" id=\"flights-btn\">Vuelos</a></li>\n        </ul>\n        <div class=\"profile-icon\" id=\"profile-icon\"><button id=\"search-btn\">\uD83D\uDC64</button>\n\n        </div>\n    </nav>\n</header>\n\n<main>\n    <section class=\"search-section\">\n        <input type=\"text\" id=\"from\" placeholder=\"Origen\">\n        <input type=\"text\" id=\"to\" placeholder=\"Destino\">\n        <input type=\"date\" id=\"check-in\">\n        <input type=\"date\" id=\"check-out\">\n        <button id=\"search-btn\">Buscar</button>\n    </section>\n\n    <section class=\"popular-flights\">\n        <h2>Destinos mas Populares</h2>\n        <div class=\"flights-container\">\n            <div class=\"flight-card\">New York</div>\n            <div class=\"flight-card\">London</div>\n            <div class=\"flight-card\">Italy</div>\n        </div>\n    </section>\n\n    <section class=\"recent-searches\">\n        <h2>Busquedas mas Recientes</h2>\n        <div id=\"recent-searches-container\"></div>\n    </section>\n</main>\n\n<footer>\n    <p>&copy; Copyright Viajes y  Vacaciones 2025. Todos los derechos Reservados.</p>\n    <p>\n        <a href=\"https://www.facebook.com\" target=\"_blank\" rel=\"noopener noreferrer\">\n          <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\" fill=\"currentColor\" class=\"bi bi-facebook\" viewBox=\"0 0 16 16\">\n            <path d=\"M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951\"/>\n          </svg>\n        </a>\n\n        <a href=\"https://www.instagram.com\" target=\"_blank\" rel=\"noopener noreferrer\">\n          <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\" fill=\"currentColor\" class=\"bi bi-instagram\" viewBox=\"0 0 16 16\">\n            <path d=\"M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334\"/>\n          </svg>\n        </a>\n\n        <a href=\"https://www.whatsapp.com/?lang=es_LA\" target=\"_blank\" rel=\"noopener noreferrer\">\n          <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\" fill=\"currentColor\" class=\"bi bi-whatsapp\" viewBox=\"0 0 16 16\">\n            <path d=\"M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232\"/>\n          </svg>\n        </a>\n\n        <a href=\"https://x.com/?lang=es\" target=\"_blank\" rel=\"noopener noreferrer\">\n          <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\" fill=\"currentColor\" class=\"bi bi-twitter-x\" viewBox=\"0 0 16 16\">\n            <path d=\"M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z\"/>\n          </svg>\n        </a>\n      </p>\n</footer>\n\n<script defer src=\"Javascript/MenuPrincipal.js\"></script>\n</body>\n</html>\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/MenuPrincipal.html b/MenuPrincipal.html
+--- a/MenuPrincipal.html	(revision fb405d554ffbb85f142326a62daa01e4c3327c0f)
++++ b/MenuPrincipal.html	(date 1741407399930)
+@@ -5,6 +5,8 @@
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>TicoFLY</title>
+     <link rel="stylesheet" href="Styles/MenuPrincipal.css">
++        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
++
+ </head>
+ <body>
+ <!-- Cabecera del sitio con el menú de navegación -->
+@@ -17,8 +19,11 @@
+             <li><a href="#" id="reserve-btn">Reservas</a></li>
+             <li><a href="#" id="flights-btn">Vuelos</a></li>
+         </ul>
+-        <div class="profile-icon" id="profile-icon"><button id="search-btn">👤</button>
+-
++        <div class="profile-icon" id="profile-icon">
++            <a href="Loging.html"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
++                <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
++                <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"/>
++              </svg></a>
+         </div>
+     </nav>
+ </header>
+@@ -49,31 +54,22 @@
+ 
+ <footer>
+     <p>&copy; Copyright Viajes y  Vacaciones 2025. Todos los derechos Reservados.</p>
+-    <p>
+-        <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
+-          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+-            <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
+-          </svg>
+-        </a>
++   <a href="https://www.facebook.com/"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
++        <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
++      </svg></a> 
+ 
+-        <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
+-          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+-            <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+-          </svg>
+-        </a>
++      <a href="https://www.instagram.com/"><svg xmlns="http://www.w3.org/2000/svg" width="30" height=""""30" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
++        <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
++      </svg></a> 
+ 
+-        <a href="https://www.whatsapp.com/?lang=es_LA" target="_blank" rel="noopener noreferrer">
+-          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
+-            <path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/>
+-          </svg>
+-        </a>
+-
+-        <a href="https://x.com/?lang=es" target="_blank" rel="noopener noreferrer">
+-          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter-x" viewBox="0 0 16 16">
+-            <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"/>
+-          </svg>
+-        </a>
+-      </p>
++      <a href="https://x.com/?lang=es"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-twitter-x" viewBox="0 0 16 16">
++        <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"/>
++      </svg></a>
++
++      <a href="https://www.whatsapp.com/?lang=es_LA"><svg xmlns="http://www.w3.org/2000/svg" width="30" hei0" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
++        <path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/>
++      </svg></a>
++
+ </footer>
+ 
+ <script defer src="Javascript/MenuPrincipal.js"></script>
+Index: Styles/MenuPrincipal.css
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>/* Global Styles */\n* {\n    margin: 0;\n    padding: 0;\n    box-sizing: border-box;\n}\n\nbody {\n    font-family: 'Arial', sans-serif;\n    background-color: #FFFFFF; /* Blanco */\n    color: #333;\n}\n\n/* Header Styles */\nheader {\n    background-color: #0E7490; /* Azul oscuro */\n    color: white;\n    padding: 20px 0;\n}\n\nnav {\n    display: flex;\n    justify-content: space-between;\n    align-items: center;\n    max-width: 1200px;\n    margin: 0 auto;\n    padding: 0 20px;\n}\n\nnav h1 {\n    font-size: 1.8rem;\n    font-weight: bold;\n}\n\nnav ul {\n    list-style-type: none;\n    display: flex;\n}\n\nnav ul li {\n    margin-left: 20px;\n}\n\nnav ul li a {\n    color: white;\n    text-decoration: none;\n    font-size: 1rem;\n    font-weight: 500;\n}\n\nnav ul li a:hover {\n    text-decoration: underline;\n}\n\n.profile-icon {\n    font-size: 2rem;\n}\n\n/* Main Styles */\nmain {\n    padding: 40px 0;\n}\n\n.search-section {\n    display: flex;\n    justify-content: center;\n    gap: 15px;\n    margin-bottom: 40px;\n}\n\n.search-section input, .search-section button {\n    padding: 10px;\n    font-size: 1rem;\n    border-radius: 5px;\n    border: 1px solid #ccc;\n}\n\n.search-section input:focus, .search-section button:focus {\n    outline: none;\n    border-color: #0E7490; /* Azul oscuro */\n}\n\n.search-section button {\n    background-color: #FBBF24; /* Amarillo */\n    color: white;\n    cursor: pointer;\n    transition: background-color 0.3s;\n}\n\n.search-section button:hover {\n    background-color: #F97316; /* Naranja */\n}\n\n.search-section input {\n    border-color: #10B981; /* Verde */\n}\n\n.search-section input:focus {\n    border-color: #10B981; /* Verde */\n}\n\n/* Popular Flights Section */\n.popular-flights {\n    text-align: center;\n    margin-bottom: 40px;\n}\n\n.popular-flights h2 {\n    font-size: 1.6rem;\n    margin-bottom: 20px;\n    color: #0E7490; /* Azul oscuro */\n}\n\n.flights-container {\n    display: flex;\n    justify-content: center;\n    gap: 20px;\n}\n\n.flight-card {\n    background-color: #FFFFFF; /* Blanco */\n    padding: 20px;\n    border-radius: 10px;\n    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);\n    width: 200px;\n    text-align: center;\n    font-weight: bold;\n    transition: transform 0.3s;\n    border: 2px solid #FBBF24; /* Amarillo */\n}\n\n.flight-card:hover {\n    transform: translateY(-5px);\n}\n\n.flight-card:active {\n    transform: translateY(2px);\n}\n\n/* Recent Searches Section */\n.recent-searches {\n    text-align: center;\n}\n\n.recent-searches h2 {\n    font-size: 1.6rem;\n    margin-bottom: 20px;\n    color: #0E7490; /* Azul oscuro */\n}\n\n#recent-searches-container {\n    display: flex;\n    justify-content: center;\n    gap: 20px;\n}\n\n/* Footer Styles */\nfooter {\n    background-color: #0E7490; /* Azul oscuro */\n    color: white;\n    padding: 20px 0;\n    text-align: center;\n    margin-top: 40px;\n    \n}\n\nsvg {\n    color: white;\n    margin: 10px;\n}\n\n/* Button Secondary (Green) */\n.button-secondary {\n    background-color: #10B981; /* Verde */\n    color: white;\n    padding: 10px 20px;\n    border-radius: 5px;\n    border: none;\n    font-size: 1rem;\n    cursor: pointer;\n    transition: background-color 0.3s;\n}\n\n.button-secondary:hover {\n    background-color: #1E40AF; /* Azul */\n}\n\n/* Responsive Styles */\n@media (max-width: 768px) {\n    nav h1 {\n        font-size: 1.5rem;\n    }\n\n    nav ul {\n        flex-direction: column;\n        align-items: center;\n    }\n\n    nav ul li {\n        margin-left: 0;\n        margin-bottom: 10px;\n    }\n\n    .search-section {\n        flex-direction: column;\n        align-items: center;\n    }\n\n    .flights-container {\n        flex-direction: column;\n    }\n\n    .flight-card {\n        width: 100%;\n    }\n\n    #recent-searches-container {\n        flex-direction: column;\n    }\n}\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Styles/MenuPrincipal.css b/Styles/MenuPrincipal.css
+--- a/Styles/MenuPrincipal.css	(revision fb405d554ffbb85f142326a62daa01e4c3327c0f)
++++ b/Styles/MenuPrincipal.css	(date 1741407399930)
+@@ -52,6 +52,8 @@
+     text-decoration: underline;
+ }
+ 
++
++
+ .profile-icon {
+     font-size: 2rem;
+ }
+@@ -167,22 +169,7 @@
+ svg {
+     color: white;
+     margin: 10px;
+-}
+-
+-/* Button Secondary (Green) */
+-.button-secondary {
+-    background-color: #10B981; /* Verde */
+-    color: white;
+-    padding: 10px 20px;
+-    border-radius: 5px;
+-    border: none;
+-    font-size: 1rem;
+-    cursor: pointer;
+-    transition: background-color 0.3s;
+-}
+-
+-.button-secondary:hover {
+-    background-color: #1E40AF; /* Azul */
++;
+ }
+ 
+ /* Responsive Styles */

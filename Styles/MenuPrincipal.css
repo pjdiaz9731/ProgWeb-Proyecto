@@ -52,8 +52,6 @@ nav ul li a:hover {
     text-decoration: underline;
 }
 
-
-
 .profile-icon {
     font-size: 2rem;
 }
@@ -169,7 +167,22 @@ footer {
 svg {
     color: white;
     margin: 10px;
-;
+}
+
+/* Button Secondary (Green) */
+.button-secondary {
+    background-color: #10B981; /* Verde */
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.button-secondary:hover {
+    background-color: #1E40AF; /* Azul */
 }
 
 /* Responsive Styles */

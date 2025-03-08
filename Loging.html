@@ -3,27 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inicio de sesión</title>
-    <link rel="stylesheet" href="Styles/Loging.css">
+    <title>Formulario de Login</title>
+    <link rel="stylesheet" href=/Styles/Loging.css> <!-- Asegúrate de enlazar tu archivo CSS -->
 </head>
 <body>
-<div class="login-container">
-    <form class="login-form" action="/login" method="POST">
-        <h2>Iniciar sesión</h2>
-        <div class="input-group">
-            <label for="username">Nombre de usuario</label>
-            <input type="text" id="username" name="username" placeholder="Introduce tu nombre de usuario" required>
-        </div>
-        <div class="input-group">
-            <label for="password">Contraseña</label>
-            <input type="password" id="password" name="password" placeholder="Introduce tu contraseña" required>
-        </div>
-        <button type="submit" class="login-btn">Iniciar sesión</button>
-        <div class="extra-options">
-            <a href="#">¿Olvidaste tu contraseña?</a>
-            <p>¿No tienes cuenta? <a href="CrearCuenta.html">Crear cuenta</a></p>
-        </div>
-    </form>
+
+<!-- Video de fondo -->
+<div class="video-background">
+    <video autoplay muted loop>
+        <source src="video_fondo.mp4" type="video/mp4">
+        Tu navegador no soporta videos HTML5.
+    </video>
 </div>
+
+<!-- Contenedor principal del formulario de login -->
+<div class="login-container">
+    <h2>Iniciar sesión</h2>
+
+    <!-- Formulario de login -->
+    <form action="#" method="post">
+        <input type="text" class="form-control" placeholder="Usuario" required>
+        <input type="password" class="form-control" placeholder="Contraseña" required>
+        <button type="submit" class="btn-primary">Iniciar sesión</button>
+    </form>
+
+    <!-- Enlace para recuperación de contraseña -->
+    <div style="text-align:center; margin-top:10px;">
+        <a href="#">¿Olvidaste tu contraseña?</a>
+    </div>
+
+    <!-- Botones para iniciar sesión con Google o Apple -->
+    <div class="social-login" style="margin-top:20px;">
+        <button class="btn google-btn">
+            <img src="google-icon.png" alt="Google" class="social-icon"> Iniciar sesión con Google
+        </button>
+        <button class="btn apple-btn" style="margin-top:10px;">
+            <img src="apple-icon.png" alt="Apple" class="social-icon"> Iniciar sesión con Apple
+        </button>
+    </div>
+</div>
+
 </body>
 </html>
