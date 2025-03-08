@@ -5,21 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flight Search</title>
     <link rel="stylesheet" href="Styles/MenuPrincipal.css">
-    <script defer src="script.js"></script>
 </head>
 <body>
+<!-- Cabecera del sitio con el menú de navegación -->
 <header>
     <nav>
         <h1>Travel</h1>
-        <ul>
-            <li><a href="#">Discover</a></li>
-            <li><a href="#">Trips</a></li>
-            <li><a href="#">Reserve</a></li>
-            <li><a href="#">Flights</a></li>
+        <ul id="nav-list">
+            <li><a href="#" id="discover-btn">Discover</a></li>
+            <li><a href="#" id="trips-btn">Trips</a></li>
+            <li><a href="#" id="reserve-btn">Reserve</a></li>
+            <li><a href="#" id="flights-btn">Flights</a></li>
         </ul>
-        <div class="profile-icon">👤</div>
+        <div class="profile-icon" id="profile-icon">👤</div>
     </nav>
 </header>
+
 <main>
     <section class="search-section">
         <input type="text" id="from" placeholder="From">
@@ -28,6 +29,7 @@
         <input type="date" id="check-out">
         <button id="search-btn">Search</button>
     </section>
+
     <section class="popular-flights">
         <h2>The most popular flights</h2>
         <div class="flights-container">
@@ -36,13 +38,17 @@
             <div class="flight-card">Italy</div>
         </div>
     </section>
+
     <section class="recent-searches">
         <h2>Recent Searches</h2>
         <div id="recent-searches-container"></div>
     </section>
 </main>
+
 <footer>
     <p>&copy; Copyright Travel and Vacation 2024. All rights reserved.</p>
 </footer>
+
+<script defer src="script.js"></script>
 </body>
 </html>
