@@ -5,11 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f7b69f1d-d0a1-4882-9053-f5215b7ceed0" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Javascript/Loging.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CrearCuenta.html" beforeDir="false" afterPath="$PROJECT_DIR$/CrearCuenta.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Javascript/CrearCuenta.js" beforeDir="false" afterPath="$PROJECT_DIR$/Javascript/CrearCuenta.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MenuPrincipal.html" beforeDir="false" afterPath="$PROJECT_DIR$/MenuPrincipal.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Styles/MenuPrincipal.css" beforeDir="false" afterPath="$PROJECT_DIR$/Styles/MenuPrincipal.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Loging.html" beforeDir="false" afterPath="$PROJECT_DIR$/Loging.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Styles/Loging.css" beforeDir="false" afterPath="$PROJECT_DIR$/Styles/Loging.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,12 +18,15 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="HTML File" />
+        <option value="CSS File" />
         <option value="JavaScript File" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
   &quot;lastFilter&quot;: {
@@ -53,11 +55,13 @@
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
     &quot;JavaScript Debug.Loging.html.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;last_opened_file_path&quot;: &quot;/Users/pjdiaz/Desktop/Ulatina/PrograWeb/ProgWeb-Proyecto&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -111,7 +115,7 @@
       <workItem from="1741409713497" duration="311000" />
       <workItem from="1741472208293" duration="1085000" />
       <workItem from="1741473655524" duration="3817000" />
-      <workItem from="1741478035503" duration="3678000" />
+      <workItem from="1741478035503" duration="10107000" />
     </task>
     <servers />
   </component>
