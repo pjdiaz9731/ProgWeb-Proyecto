@@ -221,6 +221,29 @@ svg {
     color: white;
     margin: 10px;
 }
+.logo {
+    position: absolute;
+    width: 150px;
+    bottom: -550px; /* Lowered the logo more */
+    left: 200px;
+    padding-left: 0;
+    background-image: url('images/Logo.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.logo2 {
+    position: absolute;
+    top: 0px;
+    left: 500px;
+    padding-left: 80px;
+    width: 200px; /* Increased the width */
+    bottom: -550px; /* Lowered the logo more */
+    left: 200px;
+    background-image: url('images/Logo.png');
+    background-size: cover;
+    background-position: center;
+}
 /* Responsividad */
 @media (max-width: 768px) {
     .search-section {
