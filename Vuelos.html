@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulta de Vuelos</title>
+    <link rel="stylesheet" href="/Styles/Vuelos.css">
+</head>
+<body>
+<h1>Consulta de Vuelos</h1>
+
+<!-- Formulario para seleccionar los parámetros de búsqueda -->
+<form id="flightForm">
+    <label for="departureCountry">País de salida:</label>
+    <select id="departureCountry" required>
+        <option value="USA">Estados Unidos</option>
+        <option value="UK">Reino Unido</option>
+        <option value="FR">Francia</option>
+        <option value="ES">España</option>
+        <!-- Agregar más opciones según lo necesites -->
+    </select>
+
+    <label for="arrivalCountry">País de llegada:</label>
+    <select id="arrivalCountry" required>
+        <option value="USA">Estados Unidos</option>
+        <option value="UK">Reino Unido</option>
+        <option value="FR">Francia</option>
+        <option value="ES">España</option>
+        <!-- Agregar más opciones según lo necesites -->
+    </select>
+
+    <label for="date">Fecha:</label>
+    <input type="date" id="date" required>
+
+    <label for="flightType">Tipo de vuelo:</label>
+    <select id="flightType">
+        <option value="departure">Salida</option>
+        <option value="arrival">Llegada</option>
+    </select>
+
+    <button type="submit">Consultar</button>
+</form>
+
+<!-- Contenedor para mostrar los resultados -->
+<div id="flightResults" class="results">
+    <!-- Los resultados de los vuelos se mostrarán aquí -->
+</div>
+
+<script src="/Javascript/Vuelos.js"></script>
+</body>
+</html>
+
