@@ -1,3 +1,4 @@
+// Requerir dependencias necesarias
 require("dotenv").config();
 const express = require("express");
 const sql = require("mssql");
@@ -9,14 +10,14 @@ const app = express();
 app.use(cors());
 app.use(bodyParser.json());
 
-// Configuración de la base de datos (usando tu servidor de Azure)
+// Configuración de la base de datos (con tus credenciales de Azure)
 const config = {
-    user: process.env.DB_USER,              // Tu nombre de usuario de SQL Server
-    password: process.env.DB_PASSWORD,      // Tu contraseña de SQL Server
+    user: process.env.DB_USER,               // Tu nombre de usuario de SQL Server
+    password: process.env.DB_PASSWORD,       // Tu contraseña de SQL Server
     server: 'progweb2025.database.windows.net',  // Nombre de tu servidor de Azure
-    database: process.env.DB_NAME,          // Nombre de tu base de datos
+    database: process.env.DB_NAME,           // Nombre de tu base de datos
     options: {
-        encrypt: true,                      // Necesario para Azure SQL
+        encrypt: true,                       // Necesario para Azure SQL
         enableArithAbort: true
     }
 };
@@ -33,7 +34,8 @@ app.post("/signup", async (req, res) => {
     try {
         const hashedPassword = hashPassword(password); // Cifrar la contraseña
 
-        let pool = await sql.connect(config);  // Conectarse a la base de datos
+        // Conexión a la base de datos y ejecución de la consulta
+        let pool = await sql.connect(config);
         let result = await pool.request()
             .input("NombreUsuario", sql.NVarChar, username)
             .input("Email", sql.NVarChar, email)
@@ -42,17 +44,18 @@ app.post("/signup", async (req, res) => {
 
         res.status(201).send({ message: "✅ Usuario registrado correctamente" });
     } catch (err) {
-        console.error(err);
-        res.status(500).send({ error: "❌ Error al registrar usuario" });
+        console.error("Error al registrar usuario:", err);
+        res.status(500).send({ error: `❌ Error al registrar usuario: ${err.message}` });
     }
 });
 
-// Ruta para verificar credenciales en login
+// Ruta para verificar credenciales de login
 app.post("/login", async (req, res) => {
     const { email, password } = req.body;
-    const hashedPassword = hashPassword(password);
+    const hashedPassword = hashPassword(password);  // Cifrar la contraseña
 
     try {
+        // Conexión a la base de datos y consulta de usuario
         let pool = await sql.connect(config);
         let result = await pool.request()
             .input("Email", sql.NVarChar, email)
@@ -64,17 +67,19 @@ app.post("/login", async (req, res) => {
 
         const user = result.recordset[0];
 
+        // Verificar la contraseña
         if (user.Contraseña !== hashedPassword) {
             return res.status(401).send({ error: "❌ Contraseña incorrecta" });
         }
 
         res.status(200).send({ message: "✅ Inicio de sesión exitoso", user: { id: user.UsuarioID, username: user.NombreUsuario, email: user.Email } });
     } catch (err) {
-        console.error(err);
+        console.error("Error al iniciar sesión:", err);
         res.status(500).send({ error: "❌ Error al iniciar sesión" });
     }
 });
 
+// Iniciar el servidor en el puerto 3000
 app.listen(3000, () => {
     console.log("✅ Servidor corriendo en http://localhost:3000");
 });
