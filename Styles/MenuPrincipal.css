@@ -37,13 +37,15 @@ header h1 {
 }
 
 #nav-list li a:hover {
-    color: #f1c40f;
+    color: #10B981;
 }
 
 .profile-icon {
     position: absolute;
-    top: 20px;
-    right: 20px;
+    top: 40px;
+    bottom: 40px;
+    right: 500px;
+    padding-left: 25px;
 }
 
 /* Sección de búsqueda */
@@ -140,30 +142,63 @@ header h1 {
     margin-bottom: 20px;
 }
 
-/* Footer */
-footer {
-    background-color: #1a1a1a;
+/* Footer Styles */
+.footer {
+    background-color: black;
+    padding: 20px 0;
     color: white;
-    padding: 20px;
-    text-align: center;
 }
 
-footer p {
-    font-size: 1rem;
+.footer__container {
+    display: grid;
+    grid-template-columns: 2fr repeat(2, 1fr);
+    gap: 5rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
 
-footer a {
-    margin: 0 10px;
-    color: white;
+.footer__col h3 {
     font-size: 1.5rem;
-    text-decoration: none;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+.footer__col h4 {
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+.footer__col p {
+    margin-bottom: 1rem;
+    cursor: pointer;
     transition: color 0.3s;
 }
 
-footer a:hover {
-    color: #f1c40f;
+.p1:hover, .p2:hover, .p3:hover {
+    color: #10B981 /* Amarillo */
 }
 
+.footer__bar {
+    padding: 0.5rem 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    border-top: 1px solid white;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer__bar p {
+    font-size: 0.9rem;
+}
+
+svg {
+    color: white;
+    margin: 10px;
+}
 /* Responsividad */
 @media (max-width: 768px) {
     .search-section {
