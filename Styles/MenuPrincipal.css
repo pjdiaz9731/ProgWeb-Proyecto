@@ -21,12 +21,8 @@ header h1 {
 #nav-list {
     display: flex;
     justify-content: center;
+    gap: 20px;
     list-style-type: none;
-    padding: 0;
-}
-
-#nav-list li {
-    margin: 0 20px;
 }
 
 #nav-list li a {
@@ -49,25 +45,23 @@ header h1 {
 #home-btn {
     position: absolute;
     top: 40px;
-    bottom: 40px;
     left: 500px;
     padding-left: 80px;
 }
 
-#home-btn :hover {
-    color: #10B981;
-}
-
-.profile-icon :hover {
+#home-btn:hover {
     color: #10B981;
 }
 
 .profile-icon {
     position: absolute;
     top: 40px;
-    bottom: 40px;
     right: 500px;
     padding-left: 25px;
+}
+
+.profile-icon:hover {
+    color: #10B981;
 }
 
 /* Sección de búsqueda */
@@ -198,8 +192,8 @@ header h1 {
     transition: color 0.3s;
 }
 
-.p1:hover, .p2:hover, .p3:hover {
-    color: #10B981 /* Amarillo */
+.footer__col p:hover {
+    color: #FFD700; /* Amarillo dorado */
 }
 
 .footer__bar {
@@ -221,13 +215,18 @@ svg {
     color: white;
     margin: 10px;
 }
+
 .logo {
     position: absolute;
     width: 150px;
-    bottom: -550px; /* Lowered the logo more */
+    bottom: -550px;
     left: 200px;
+<<<<<<< HEAD
     padding-left: 0;
     background-image: url('../images/Logo.png');
+=======
+    background-image: url('images/Logo.png');
+>>>>>>> 08318acfb47d253106882c6a0b4395eb5853a497
     background-size: cover;
     background-position: center;
 }
@@ -235,11 +234,8 @@ svg {
 .logo2 {
     position: absolute;
     top: 0px;
-    left: 500px;
-    padding-left: 80px;
-    width: 200px; /* Increased the width */
-    bottom: -550px; /* Lowered the logo more */
     left: 200px;
+    width: 200px;
     background-image: url('images/Logo.png');
     background-size: cover;
     background-position: center;
@@ -297,6 +293,7 @@ svg {
 
     .footer__container {
         grid-template-columns: 1fr;
+<<<<<<< HEAD
         gap: 2rem;
         text-align: center;
     }
@@ -313,3 +310,8 @@ svg {
         text-align: center;
     }
 }
+=======
+        text-align: center;
+    }
+}
+>>>>>>> 08318acfb47d253106882c6a0b4395eb5853a497
