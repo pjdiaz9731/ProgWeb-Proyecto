@@ -21,8 +21,12 @@ header h1 {
 #nav-list {
     display: flex;
     justify-content: center;
-    gap: 20px;
     list-style-type: none;
+    padding: 0;
+}
+
+#nav-list li {
+    margin: 0 20px;
 }
 
 #nav-list li a {
@@ -45,23 +49,25 @@ header h1 {
 #home-btn {
     position: absolute;
     top: 40px;
+    bottom: 40px;
     left: 500px;
     padding-left: 80px;
 }
 
-#home-btn:hover {
+#home-btn :hover {
+    color: #10B981;
+}
+
+.profile-icon :hover {
     color: #10B981;
 }
 
 .profile-icon {
     position: absolute;
     top: 40px;
+    bottom: 40px;
     right: 500px;
     padding-left: 25px;
-}
-
-.profile-icon:hover {
-    color: #10B981;
 }
 
 /* Sección de búsqueda */
@@ -192,8 +198,8 @@ header h1 {
     transition: color 0.3s;
 }
 
-.footer__col p:hover {
-    color: #FFD700; /* Amarillo dorado */
+.p1:hover, .p2:hover, .p3:hover {
+    color: #10B981 /* Amarillo */
 }
 
 .footer__bar {
@@ -216,102 +222,64 @@ svg {
     margin: 10px;
 }
 
+/* Logo 1 */
 .logo {
     position: absolute;
     width: 150px;
-    bottom: -550px;
-    left: 200px;
-<<<<<<< HEAD
-    padding-left: 0;
+    bottom: -715px;
+    left: 10%;
     background-image: url('../images/Logo.png');
-=======
-    background-image: url('images/Logo.png');
->>>>>>> 08318acfb47d253106882c6a0b4395eb5853a497
     background-size: cover;
     background-position: center;
+    z-index: 1000;
 }
 
+/* Logo 2 */
 .logo2 {
     position: absolute;
-    top: 0px;
-    left: 200px;
-    width: 200px;
-    background-image: url('images/Logo.png');
+    top: 5px;
+    left: 15%;
+    transform: translateX(-50%);
+    width: 150px;
+    background-image: url('../images/Logo.png');
     background-size: cover;
     background-position: center;
+    z-index: 1000;
 }
 
-/* Responsividad */
-@media (max-width: 768px) {
-    header {
-        padding: 10px;
-        text-align: center;
-    }
-
+/* Responsividad para dispositivos con pantallas de 1200px o más (pantallas grandes) */
+@media (min-width: 1200px) {
     header h1 {
-        font-size: 2rem;
-    }
-
-    #nav-list {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    #nav-list li {
-        margin: 10px 0;
+        font-size: 3rem;
     }
 
     .titulo {
-        font-size: 2rem;
+        font-size: 3rem;
     }
 
-    #home-btn, .profile-icon {
-        position: static;
-        padding: 10px;
-        text-align: center;
-    }
-
-    .search-section {
-        flex-direction: column;
-        align-items: center;
+    .search-section input, .search-section button {
+        font-size: 1.2rem;
     }
 
     .carousel-inner img {
-        height: auto;
-        width: 100%;
-    }
-
-    .flights-container {
-        flex-direction: column;
-        align-items: center;
+        height: 600px;
     }
 
     .flight-card {
-        width: 100%;
-        height: 200px;
+        width: 300px;
+        height: 300px;
+        font-size: 2rem;
     }
 
-    .footer__container {
-        grid-template-columns: 1fr;
-<<<<<<< HEAD
-        gap: 2rem;
-        text-align: center;
+    .footer__col h3, .footer__col h4 {
+        font-size: 1.8rem;
     }
 
-    .footer__bar {
-        flex-direction: column;
-        align-items: center;
+    .footer__bar p {
+        font-size: 1.2rem;
     }
 
-    .logo, .logo2 {
-        position: sticky;
-        margin: 20px auto;
-        display: block;
-        text-align: center;
+    svg {
+        margin: 15px;
     }
 }
-=======
-        text-align: center;
-    }
-}
->>>>>>> 08318acfb47d253106882c6a0b4395eb5853a497
