@@ -227,7 +227,7 @@ svg {
     bottom: -550px; /* Lowered the logo more */
     left: 200px;
     padding-left: 0;
-    background-image: url('images/Logo.png');
+    background-image: url('../images/Logo.png');
     background-size: cover;
     background-position: center;
 }
@@ -244,19 +244,72 @@ svg {
     background-size: cover;
     background-position: center;
 }
+
 /* Responsividad */
 @media (max-width: 768px) {
+    header {
+        padding: 10px;
+        text-align: center;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    #nav-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #nav-list li {
+        margin: 10px 0;
+    }
+
+    .titulo {
+        font-size: 2rem;
+    }
+
+    #home-btn, .profile-icon {
+        position: static;
+        padding: 10px;
+        text-align: center;
+    }
+
     .search-section {
         flex-direction: column;
         align-items: center;
     }
 
+    .carousel-inner img {
+        height: auto;
+        width: 100%;
+    }
+
     .flights-container {
         flex-direction: column;
+        align-items: center;
     }
 
     .flight-card {
         width: 100%;
         height: 200px;
+    }
+
+    .footer__container {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        text-align: center;
+    }
+
+    .footer__bar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo, .logo2 {
+        position: sticky;
+        margin: 20px auto;
+        display: block;
+        text-align: center;
     }
 }
