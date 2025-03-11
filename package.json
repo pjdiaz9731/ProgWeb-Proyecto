@@ -5,6 +5,7 @@
   "main": "CrearCuenta.html.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
+    
   },
   "repository": {
     "type": "git",
@@ -26,4 +27,9 @@
     "mssql": "^11.0.1",
     "mysql": "^2.18.1"
   }
+
+  "scripts": {
+  "build": "npm run build"
+}
+
 }

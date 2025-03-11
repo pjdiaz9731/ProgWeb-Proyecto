@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f7b69f1d-d0a1-4882-9053-f5215b7ceed0" name="Changes" comment="Se agrego pestana de Vuelos">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="f7b69f1d-d0a1-4882-9053-f5215b7ceed0" name="Changes" comment="Se agrego pestana de Vuelos" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -120,6 +118,7 @@
       <workItem from="1741569253038" duration="2360000" />
       <workItem from="1741577246094" duration="54000" />
       <workItem from="1741636409361" duration="611000" />
+      <workItem from="1741662309423" duration="308000" />
     </task>
     <servers />
   </component>
